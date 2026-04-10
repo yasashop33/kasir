@@ -210,7 +210,16 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
   }
+ .cart-member {
+  margin-top: auto; /* ini kunci utama */
+}
+ .cart-total {
+  background: var(--white);
+}
   .cart-header {
     display: flex; align-items: center; justify-content: space-between;
     margin-bottom: 14px;
@@ -280,7 +289,11 @@
   }
   .btn-checkout:hover { background: var(--green-dark); }
   .btn-checkout:disabled { opacity: .5; cursor: not-allowed; }
-
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
   /* ══════════════════════════════
      PAGE 2 — UPDATE STOK
   ══════════════════════════════ */
